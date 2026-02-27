@@ -1,0 +1,20 @@
+# Core FastAPI
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+pydantic==2.5.0
+python-dotenv==1.0.0
+
+# Optimization
+pulp==2.7.0
+numpy==1.26.2
+
+# Export functionality
+reportlab==4.0.7
+openpyxl==3.1.2
+
+# Testing
+pytest==7.4.3
+httpx==0.25.2
+
+# CORS
+python-multipart==0.0.6

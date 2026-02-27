@@ -1,0 +1,64 @@
+{
+  "farm_resources": {
+    "total_land": 100,
+    "plants_per_acre": 1000
+  },
+  "crops": [
+    {
+      "name": "Strawberries",
+      "base_yield_per_plant": 2.5,
+      "planting_cost_per_acre": 500,
+      "vendor_cost_per_lb": 2.0,
+      "contract_demand": 50000,
+      "contract_price": 1.5,
+      "processing_price_per_pint": 3.0,
+      "retail_price": 4.0,
+      "pints_per_lb": 0.8,
+      "waste_cost_per_lb": 0.1,
+      "shortage_penalty_per_lb": 5.0
+    },
+    {
+      "name": "Blueberries",
+      "base_yield_per_plant": 1.8,
+      "planting_cost_per_acre": 450,
+      "vendor_cost_per_lb": 2.5,
+      "contract_demand": 30000,
+      "contract_price": 2.0,
+      "processing_price_per_pint": 4.0,
+      "retail_price": 5.0,
+      "pints_per_lb": 0.75,
+      "waste_cost_per_lb": 0.15,
+      "shortage_penalty_per_lb": 6.0
+    }
+  ],
+  "channels": {
+    "processing_capacity": 150000,
+    "retail_capacity": 80000
+  },
+  "scenarios": [
+    {
+      "name": "Drought",
+      "probability": 0.3,
+      "yield_changes": {
+        "Strawberries": -0.3,
+        "Blueberries": -0.25
+      }
+    },
+    {
+      "name": "Normal Weather",
+      "probability": 0.5,
+      "yield_changes": {
+        "Strawberries": 0.0,
+        "Blueberries": 0.0
+      }
+    },
+    {
+      "name": "Ideal Conditions",
+      "probability": 0.2,
+      "yield_changes": {
+        "Strawberries": 0.2,
+        "Blueberries": 0.15
+      }
+    }
+  ]
+}
