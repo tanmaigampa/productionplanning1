@@ -70,7 +70,7 @@ const Home: React.FC = () => {
         </div>
       </header>
 
-      <main className="w-full max-w-[1600px] mx-auto px-10 sm:px-16 py-16 space-y-32" style={{ zoom: 1.2 }}>
+      <main className="w-full max-w-[1600px] mx-auto px-10 sm:px-16 py-16 space-y-32" style={{ zoom: 0.9 }}>
 
         {/* ── Hero ── */}
         <section className="text-center animate-slide-up mt-12">
